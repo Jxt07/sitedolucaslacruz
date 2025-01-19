@@ -1,0 +1,122 @@
+/* Fundo animado */
+body.animated-background {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1db954, #191414, #1db954, #191414);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor legibilidade */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .profile {
+    margin-bottom: 30px;
+  }
+  
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .profile-name {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .instagram-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .instagram-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .fab.fa-instagram {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .music-player {
+    margin: 20px 0;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  iframe {
+    border-radius: 10px;
+  }
+  /* Estilo da seção de memes */
+.memes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .meme {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .meme:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  }
+  
+  .meme-img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
